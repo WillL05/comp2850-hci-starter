@@ -19,10 +19,10 @@ import java.io.StringWriter
  */
 
 // Week 7+ imports (inline edit, toggle completion):
-// import model.Task               // When Task becomes separate model class
-// import model.ValidationResult   // For validation errors
-// import renderTemplate            // Extension function from Main.kt
-// import isHtmxRequest             // Extension function from Main.kt
+//import model.Task               // When Task becomes separate model class
+//import renderTemplate            // Extension function from Main.kt
+//import model.ValidationResult   // For validation errors
+//import isHtmxRequest             // Extension function from Main.kt
 
 // Week 8+ imports (pagination, search, URL encoding):
 // import io.ktor.http.encodeURLParameter  // For query parameter encoding
@@ -176,7 +176,6 @@ fun Route.taskRoutes() {
             call.respondText(writer.toString(), ContentType.Text.Html)
         }
     }
-
     post("/tasks/{id}/edit") {
         val id = call.parameters["id"]?.toIntOrNull() ?: return@post call.respond(HttpStatusCode.NotFound)
         val task = TaskRepository.find(id) ?: return@post call.respond(HttpStatusCode.NotFound)
