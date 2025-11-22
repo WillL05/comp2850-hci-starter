@@ -1,31 +1,20 @@
 # Week 10 • Lab 2 — Inclusive Redesign, Re-Verification, Task 2 Packaging
 
-<div class="badges">
-  <span class="badge lo">LO1</span>
-  <span class="badge lo">LO3</span>
-  <span class="badge lo">LO4</span>
-  <span class="badge lo">LO5</span>
-  <span class="badge lo">LO6</span>
-  <span class="badge lo">LO7</span>
-  <span class="badge lo">LO8</span>
-  <span class="badge lo">LO9</span>
-  <span class="badge lo">LO10</span>
-  <span class="badge lo">LO13</span>
-  <span class="badge acm">HCI-Design</span>
-  <span class="badge acm">HCI-Evaluation</span>
-  <span class="badge acm">A&I</span>
-  <span class="badge wcag">WCAG 2.2 AA</span>
-</div>
+![COMP2850](https://img.shields.io/badge/COMP2850-HCI-blue)
+![Week 10](https://img.shields.io/badge/Week-10-orange)
+![Lab 2](https://img.shields.io/badge/Lab-2-green)
+![Status](https://img.shields.io/badge/Status-Draft-yellow)
 
-> **Terminology Note**: Avoid "user." Prefer **person**, **participant**, **peer**, **pilot**.
+
 
 ---
 
 ## Before Lab: Required Reading (10 mins)
 
-📖 **Essential**:
+📖 **Essential**
 - Review your redesign brief (`wk10/lab-wk10/docs/redesign-brief.md`)
-- Review `../../references/assistive-testing-checklist.md`
+- Review [Assistive Testing Checklist](../references/assistive-testing-checklist.md)
+- Skim the [Screenshot Evidence Guide](../references/screenshot-guide.md)
 - [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) (sections 3.3, 4.1)
 
 📖 **Contextual**:
@@ -53,16 +42,24 @@ Week 10 Lab 1 identified Priority 1 fixes through data analysis. **Today you imp
 
 ---
 
-## Learning Outcomes
+## Learning Focus
 
-By end of lab:
-1. **Implement** Priority 1 fix from redesign brief (server + template changes) (LO5, LO6, LO10)
-2. **Verify** accessibility with regression checklist (keyboard, SR, no-JS) (LO7, LO9)
-3. **Measure** post-change metrics and compare to baseline (LO4, LO8)
-4. **Document** evidence chains (code diffs, screenshots, metrics) (LO3, LO13)
-5. **Package** Task 2 submission with before/after data (LO1, LO13)
+### Lab Objectives
+By the end of this session, you will have:
+- Implemented top 3 prioritised fixes (WCAG 2.2 AA)
+- Run regression testing (axe + manual keyboard, SR, no-JS)
+- Re-piloted with n=2 to verify improvements
+- Measured post-change metrics and compared to baseline
+- Documented evidence chains (code diffs, screenshots, metrics)
+- Packaged Task 2 submission with before/after data
 
-Maps to ACM: HCI-Design (implementation), HCI-Evaluation (verification), A&I (inclusive fixes)
+### Learning Outcomes Addressed
+This lab contributes to the following module Learning Outcomes ([full definitions](../references/learning-outcomes.md)):
+
+- **LO4**: Evaluate for accessibility — evidenced by regression testing
+- **LO6**: Apply iterative design — evidenced by redesign → re-verification cycle
+- **LO9**: Apply inclusive design — evidenced by WCAG-compliant redesign
+- **LO12**: Demonstrate professionalism — evidenced by evidence chains in documentation
 Maps to WCAG: 2.2 AA (demonstrable compliance)
 
 ---
@@ -188,7 +185,7 @@ Maps to WCAG: 2.2 AA (demonstrable compliance)
 
 ### Step 1: Review redesign brief (5 min)
 
-**Open `wk10/lab-wk10/docs/redesign-brief.md`** and confirm:
+Open `wk10/lab-wk10/docs/redesign-brief.md` and confirm:
 - [ ] Problem statement clear (backed by Week 9 data)
 - [ ] Proposed changes specific (file paths, before/after code)
 - [ ] Acceptance criteria measurable
@@ -732,7 +729,7 @@ wk10/gradescope/task2/05-evidence/
 
 1. **Raw data**: `05-evidence/metrics/before-analysis.csv` (Week 9 pilots)
 2. **Analysis**: `03-before-after-summary.md` (completion 67% → 100%)
-3. **Prioritization**: `01-redesign-brief.md` (Priority 1, Score 8)
+3. **Prioritisation**: `01-redesign-brief.md` (Priority 1, Score 8)
 4. **Implementation**: `04-key-diffs.md` (code changes with WCAG rationale)
 5. **Verification**: `02-regression-checklist.csv` + `05-evidence/screenshots/` (post-change testing)
 6. **Measurement**: `05-evidence/metrics/after-analysis.csv` (post-change pilots)
@@ -818,8 +815,9 @@ Next week:
 ## Further Reading & Resources
 
 ### Essential
-- Review `../../references/assistive-testing-checklist.md`
-- Review `../../references/evaluation-metrics-quickref.md`
+- Review [Assistive Testing Checklist](../references/assistive-testing-checklist.md)
+- Skim the [Screenshot Evidence Guide](../references/screenshot-guide.md)
+- Review [Evaluation Metrics Quick Reference](../references/evaluation-metrics-quickref.md)
 - [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/)
 
 ### Accessible Error Handling
