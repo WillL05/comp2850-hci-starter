@@ -44,7 +44,7 @@
 ---
 
 ## Task 3: Edit Task Inline
-**Scenario**: You mhave completed all your tasks
+**Scenario**: You have completed all your tasks
 
 **Instructions**:
 1. Find all tasks listed
@@ -88,6 +88,28 @@
 - HTMX
 ---
 
+## Task 4: Delete Completed Task
+**Scenario**: You've want to see all your COMP2870 worksheets
+
+**Instructions**:
+1. Filter by COMP2870
+2. Confirm that all COMP2870 worksheets show and allow for deletion and edit
+
+**Success criteria**:
+- added COMP2870 tasks show
+- doesn't show tasks not comtaining the keyword
+- can edit and delete filtered tasks
+
+**Inclusion focus**: keyboard-only editing, Focus management
+
+**Metrics**: 
+- 20 seconds
+- 1
+- 0
+- HTMX
+---
+
+
 ## Metrics per Task
 
 For each task, record:
@@ -95,3 +117,4 @@ For each task, record:
 - **Success** (1 = completed, 0 = abandoned)
 - **Error count** (validation errors, wrong clicks)
 - **Mode** (HTMX or no-JS)
+
