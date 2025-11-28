@@ -1,22 +1,20 @@
 # Evaluation Tasks — Week 9
-
-## Task 1: Filter and Complete
-**Scenario**: You've just finished your worksheet for the week called worksheet4.
+## Task 1: Delete Completed Task
+**Scenario**: You've want to see all your COMP2870 worksheets
 
 **Instructions**:
-1. Find the task titled "worksheet4"
-2. Mark it as complete
-3. Verify it's marked correctly
+1. Filter by COMP2870
+2. Confirm that all COMP2870 worksheets show and allow for deletion and edit
 
 **Success criteria**:
-- Participant finds correct task within 30 seconds
-- Toggle works (checkbox/button responds)
-- Visual confirmation shown (strikethrough, badge, status message)
+- added COMP2870 tasks show
+- doesn't show tasks not comtaining the keyword
+- can edit and delete filtered tasks
 
-**Inclusion focus**: Keyboard access, screen reader announcement
+**Inclusion focus**: keyboard-only editing, Focus management
 
 **Metrics**: 
-- 10 seconds
+- 20 seconds
 - 1
 - 0
 - HTMX
@@ -44,20 +42,19 @@
 ---
 
 ## Task 3: Edit Task Inline
-**Scenario**: You have completed all your tasks
+**Scenario**: You have made a typo in your task titled COMP2870 worksheet 3
 
 **Instructions**:
-1. Find all tasks listed
-2. delete each one by one
-3. should show less tasks each time
-4. task list should eventually be empty
+1. Find task "COMP2870 worksheet 3"
+2. Edit it to say "COMP2860 worksheet 3"
+3. save the change
 
 **Success criteria**:
-- can delete each task one by one
-- can easily access multiple tasks to delete them
-- task list is empty after all tasks deleted
+- Edit mode activates (input appears)
+- Save updates the title
+- Focus returns to edited task
 
-**Inclusion focus**: Focus management, keyboard-only editing, delete button, screen reader announcement
+**Inclusion focus**: Focus management, keyboard-only editing, delete button, cancel button
 
 **Metrics**: 
 - 35 seconds
@@ -66,44 +63,25 @@
 - HTMX
 ---
 
-## Task 4: Delete Completed Task
-**Scenario**: You've completed "worksheet 3" and want to remove it.
-
-**Instructions**:
-1. Find task "worksheet 3"
-2. Delete it
-3. Confirm it's gone
-
-**Success criteria**:
-- Confirmation shown (HTMX) OR form submits (no-JS)
-- Task removed from list
-- Status message announced
-
-**Inclusion focus**: Confirmation (HTMX has `hx-confirm`, no-JS has none - documented trade-off)
-
-**Metrics**: 
-- 10 seconds
-- 1
-- 0
-- HTMX
----
-
-## Task 4: Delete Completed Task
-**Scenario**: You've want to see all your COMP2870 worksheets
+## Task 4: Completed All Tasks
+**Scenario**: You have completed all your listed tasks for COMP2870
 
 **Instructions**:
 1. Filter by COMP2870
-2. Confirm that all COMP2870 worksheets show and allow for deletion and edit
+2. Delete all listed tasks
+3. No tasks should remain
 
 **Success criteria**:
 - added COMP2870 tasks show
 - doesn't show tasks not comtaining the keyword
-- can edit and delete filtered tasks
+- Task removed from list
+- Status message announced
+- No tasks remain
 
-**Inclusion focus**: keyboard-only editing, Focus management
+**Inclusion focus**: Focus management, keyboard-only editing, delete button, cancel button
 
 **Metrics**: 
-- 20 seconds
+- 50 seconds
 - 1
 - 0
 - HTMX

@@ -23,3 +23,27 @@ Confidence ratings (1–5):
   T1: 4
   T2: 3 ("not sure it saved")
   T4: 5
+
+
+Session: P1 (sid = P1_7a9f)
+Date: 2025-11-27
+Variant: Keyboard, mouse, JS-on
+ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
+
+| Time | Task | Observation | Tag |
+|1.59|T1|-------------|-----|
+|5.24|T2|-------------|-----|
+|10.14|T3|-------------|-----|
+|10.92|T4|-------------|-----|
+
+
+Confidence ratings (1–5):
+  T1: 5
+  T2: 4 
+  T3: 4
+  T4: 3 (participant put in wrong module at first)
+
+  Debrief notes:
+- "task 3 felt most difficult as there was no remove all button"
+- "everything worked as expected"
+- "I am sure that everything worked as expected as it was all displayed visually"
