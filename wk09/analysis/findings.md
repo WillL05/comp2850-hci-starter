@@ -1,16 +1,16 @@
 # Pilot Findings Analysis — Week 9
 
 **Participants**: 4 (2 HTMX, 2 No-JS)
-**Date range**: [2025-11-27 to 2025-MM-DD]
+**Date range**: [2025-12-01 to 2025-11-01]
 
 ---
 
 ## Quantitative Summary
 
 ### Task 1: Filter and Complete
-| Metric | HTMX (n=3) | No-JS (n=2) | Overall |
+| Metric | HTMX (n=2) | No-JS (n=2) | Overall |
 |--------|------------|-------------|---------|
-| Mean time (s) | 42 | 58 | 48 |
+| Mean time (s) | 11.58 | 40.08 | 15.81 |
 | Success rate | 100% | 100% | 100% |
 | Mean errors | 0.3 | 0 | 0.2 |
 | Mean confidence | 4.3/5 | 4.0/5 | 4.2/5 |
