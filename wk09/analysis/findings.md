@@ -10,24 +10,27 @@
 ### Task 1: Filter and Complete
 | Metric | HTMX (n=2) | No-JS (n=2) | Overall |
 |--------|------------|-------------|---------|
-| Mean time (s) | 11.58 | 40.08 | 15.81 |
+| Mean time (s) | 11.58 | 20.04 | 15.81 |
+| Median time (S) | 11.58 | 20.04 | 14.39 |
 | Success rate | 100% | 100% | 100% |
-| Mean errors | 0.3 | 0 | 0.2 |
-| Mean confidence | 4.3/5 | 4.0/5 | 4.2/5 |
+| Mean errors | 0 | 0 | 0.0 |
+| Mean confidence | 3.5/5 | 3.5/5 | 3.5/5 |
 
-**Interpretation**: Task 1 successful for all. HTMX slightly faster (no page reload). Low error rate. High confidence.
+**Interpretation**: Task 1 successful for all. HTMX slightly faster, despite no-JS not requiring page reload. Low error rate. Medium confidence.
 
 ---
 
 ### Task 2: Add New Task
 | Metric | HTMX | No-JS | Overall |
 |--------|------|-------|---------|
-| Mean time (s) | 28 | 35 | 30.6 |
+| Mean time (s) | 10.54 | 15.175 | 12.8575 |
+| Median time (S) | 10.54 | 15.175 | 14.605 |
 | Success rate | 100% | 100% | 100% |
 | Mean errors | 0.7 | 1.0 | 0.8 |
-| Mean confidence | 4.7/5 | 3.5/5 | 4.2/5 |
+| Mean confidence | 3.5/5 | 3.5/5 | 3.5/5 |
 
-**Interpretation**: High success but errors common (validation). HTMX confidence higher (instant feedback). No-JS participants less sure (PRG redirect, no confirmation message).
+**Interpretation**: High success but errors common - participants accidentaly trying to enter empty data into add task field
+(validation). HTMX confidence higher (instant feedback). No-JS participants less sure (PRG redirect, no confirmation message).
 
 ---
 

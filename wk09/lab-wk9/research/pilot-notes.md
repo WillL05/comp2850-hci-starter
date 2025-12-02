@@ -28,9 +28,6 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 2025-12-01T15:26:38.931824524Z,P1_3cb353,r_b9b4ecb0,T4_delete,success,,6,200,on
 2025-12-01T15:26:41.163875803Z,P1_3cb353,r_d8aac538,T4_delete,success,,2,200,on
 
-
-
-
 Confidence ratings (1–5):
   T1: 3
   T2: 4 
@@ -41,7 +38,6 @@ Confidence ratings (1–5):
 - "was difficult to know whether filter had applied or not"
 - "everything worked as expected"
 - "renaming and deleting tasks worked well"
-
 
 
 
@@ -178,7 +174,7 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 
 Confidence ratings (1–5):
-  T1: 23
+  T1: 4
   T2: 5 
   T3: 0
   T4: 2
