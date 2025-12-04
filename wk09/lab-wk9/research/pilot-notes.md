@@ -5,7 +5,7 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 | Time | Task | Observation |
 |15.33|T1|"was not clear that it was actually filtering or not - message not clear"|
-|16.18|T2|"added task message was not clear"|
+|16.18|T2|"added task message was not clear" (tried to enter empty field - was notified this was not possible)|
 |10.14|T3|"could clearly see that task was edited but could be more clear"|
 |15.16|T4|"more confirmation of hovering over delete button would be nice"|
 
@@ -48,9 +48,9 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 
 | Time | Task | Observation |
 |13.45|T1|tester accidentialy input in wrong field "buttons for add task and apply filter should be different colours"|
-|4.9|T2|"worked well"|
+|4.9|T2|"worked well but if i tried to enter a new task of just spaces this appeared to work but the task did not show up in the list and this should not be allowed"|
 |43.16|T3|FAILED - page reloaded everytime edit button pressed "didn't work"|
-|22.89|T4|"page reloded everytime delete button was pressed and the filter emptied every time"|
+|22.89|T4|"page reloded everytime delete button was pressed and the filter emptied every time and I addidentaly tried to enter empty filter field"|
 
 
 ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
