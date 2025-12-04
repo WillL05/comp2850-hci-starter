@@ -105,7 +105,7 @@ Variant: Keyboard, no-mouse, JS-on
 | Time | Task | Observation | 
 |7.83|T1|"was pretty easy"|
 |13.03|T2|"enjoyed it"|
-|16.62|T3|"N/A"|
+|16.62|T3|"filter worked well"|
 |16.97|T4|"nice and intuative design"|
 
 ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode

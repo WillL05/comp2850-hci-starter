@@ -56,52 +56,65 @@
 | Mean errors | 0.0 | 1.5 | 0.75 |
 | Mean confidence | 4.7/5 | 3.5/5 | 4.2/5 |
 
-**Interpretation**: High success but errors common (validation). HTMX confidence higher (instant feedback). No-JS participants less sure (PRG redirect, no confirmation message).
+**Interpretation**: High success but errors common, especially with no-JS as page reload after task deletion makes repetitve deletion annoying for users- requiring them to re-enter filter, subsequently leading to input errors. Confidence higher in HTMX, with no page reload every time. High error rate. High confidence
 
 ---
 
 ## Qualitative Themes
 
 ### Theme 1: Confirmation Feedback Critical
-**Evidence**: 4/5 participants mentioned needing "confirmation it worked"
+**Evidence**: 2/4 participants mentioned needing "confirmation it worked" 
 **Quotes**:
-- P1 (HTMX): "I like seeing 'Task added' immediately"
-- P3 (No-JS): "I had to scroll down to check it was there - not obvious"
+- P1 (HTMX): "I didn't even see the task added sucessfully message at top of page"
+- P4 (no-JS): "I wasn't completely sure that the filter was applying "
 
-**Design implication**: No-JS path needs explicit success message (PRG currently shows none).
+**Design implication**: Both HTMX and no-JS need better visibility of confirmation in tasks, better highlighting that actions were completed e.g. add, delete and filter .
+
+**Severity**: Very High
 
 ---
 
-### Theme 2: Edit Cancel Button Confusing
-**Evidence**: 3/5 participants hesitated on Cancel button
+### Theme 2: Hard to quickly distinguish between buttons
+**Evidence**: 3/4 participants found it difficult to distinguish between the buttons as they are all the same colour
 **Quotes**:
-- P2: "Will Cancel save my changes or lose them?"
-- P4: "I clicked it to test - wasn't sure"
+- P1: "Confirmation of hovering over the delete button, like an obvious colour, would be nice"
+- P2: "the buttons for add and apply filter should be different colours"
+- P4: "It was a little hard to see what was selected"
 
-**Design implication**: Button label needs clarification ("Cancel (discard changes)")
+**Design implication**: Button colours for hover and select should be clearer with distinct colours
+
+**Severity**: Very high
 
 ---
 
-### Theme 3: Keyboard Access Excellent
-**Evidence**: 2 participants tested keyboard-only (requested). Both succeeded all tasks.
+### Theme 3: Keyboard Access Good
+**Evidence**: 2 participants tested keyboard-only (requested). Both succeeded all tasks. However participants found it difficult to see what they had highlighted with the keyboard, making it difficult to keep track of where they were on the page.
 **Quotes**:
-- P5 (keyboard-only): "Tab order makes sense, focus always visible"
+- P4 (keyboard-only): "was a little hard to see what was selected"
 
-**Design implication**: Keep current keyboard implementation.
+**Design implication**: Keep current keyboard implementation, but change selected colour, making it more visible
+
+**Severity**: High
 
 ---
 
+### Theme 4: Edit button not working with no-JS
+
+**Evidence**: 2 no-JS participants found that the edit button did not work at all, with the page just reloading on button press 
+**Quotes**:
+- P2: "Filter didn't work at all
+- P4: "I was a little confused with the edit button not working correctly"
+
+**Design implication**: no-JS users could not use the edit button and were unable to make changes to their tasks
+
+**Severity**: high
+
+---
 ## Accessibility Observations
-
-### Screen Reader (NVDA)
-- ✅ Labels announced correctly ("Task title, edit text")
-- ✅ Status messages announced ("Task added successfully")
-- ❌ Error messages not announced in no-JS path (redirect loses `role="alert"`)
 
 ### Keyboard Navigation
 - ✅ All features reachable
-- ✅ Focus visible
-- ⚠️ Tab order logical but Edit→Save→Cancel could be clearer
+- ⚠️ Highlight of selected section could be clearer and more visible, currently difficult to see 
 
 ---
 
@@ -112,3 +125,30 @@ Based on frequency + severity:
 1. **High**: No confirmation message in no-JS path (affects 2/2 no-JS participants, low confidence)
 2. **Medium**: Cancel button ambiguous (3/5 confused, but completed anyway)
 3. **Low**: Edit button focus order (minor hesitation, all succeeded)
+
+# Redesign Priorities — Week 10 Lab 2
+
+## Priority 2: Distinguishable colours between buttons
+**Issue**: P3, P4 low confidence, had to verify task added
+**Evidence**: `wk09/data/pilot-notes.md` L45-48, L89-92
+**WCAG**: 4.1.3 Status Messages (AA)
+**Fix**: Add success message to PRG redirect (query param or session flash)
+**Effort**: 1-2 hours
+
+## Priority 1: Make confirmation of actions clearer
+**Issue**: P1,2 and 4 found it difficult to know whether task had been added to list, P1 didn't even see confirmation message at top of page
+**Evidence**: Quotes from participants 
+**WCAG**: 1.4.1 Use of Colour 
+**Fix**: give text a background of sufficient contrast 
+**Effort**: 1 hour
+
+## Priority 3: Cancel Button Label (SHOULD FIX)
+**Issue**: 3/5 confused
+**Evidence**: Hesitation, quotes
+**WCAG**: 2.4.6 Headings and Labels (AA)
+**Fix**: Change to "Cancel (discard changes)"
+**Effort**: 10 minutes
+
+## Deferred (Post-Assessment or Semester 2)
+- Filter persistence across sessions
+- Progress indicator
