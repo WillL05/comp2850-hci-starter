@@ -128,27 +128,28 @@ Based on frequency + severity:
 
 # Redesign Priorities — Week 10 Lab 2
 
-## Priority 2: Distinguishable colours between buttons
-**Issue**: P3, P4 low confidence, had to verify task added
-**Evidence**: `wk09/data/pilot-notes.md` L45-48, L89-92
-**WCAG**: 4.1.3 Status Messages (AA)
-**Fix**: Add success message to PRG redirect (query param or session flash)
-**Effort**: 1-2 hours
-
-## Priority 1: Make confirmation of actions clearer
+## Priority 1: Make confirmation of actions clearer (MUST FIX)
 **Issue**: P1,2 and 4 found it difficult to know whether task had been added to list, P1 didn't even see confirmation message at top of page
 **Evidence**: Quotes from participants 
-**WCAG**: 1.4.1 Use of Colour 
+**WCAG**: 1.4.1 Use of Colour, 4.1.3 Status Messages
 **Fix**: give text a background of sufficient contrast 
 **Effort**: 1 hour
 
-## Priority 3: Cancel Button Label (SHOULD FIX)
-**Issue**: 3/5 confused
-**Evidence**: Hesitation, quotes
+## Priority 2: Distinguishable colours between buttons (MUST FIX)
+**Issue**: P1 and P4 found it difficult to see what was selected e.g. button or field, especially prevalent on keyboard only 
+**Evidence**: quotes
+**WCAG**: 1.4.1 Use of Colour
+**Fix**: Give hover and select a colour of greater contrast
+**Effort**: 1 hour
+
+
+## Priority 3: Add status message for adding,filtering and deleting tasks, should show at top of page (SHOULD FIX)
+**Issue**: P1,P2 and P4 were unsure whether actions had completed, a pop-up message would further improve clarity and draw their attention to the action working properly 
+**Evidence**: quotes
 **WCAG**: 2.4.6 Headings and Labels (AA)
-**Fix**: Change to "Cancel (discard changes)"
-**Effort**: 10 minutes
+**Fix**: add pop-up status/announcement message on action
+**Effort**: 1-2 hours
 
 ## Deferred (Post-Assessment or Semester 2)
-- Filter persistence across sessions
-- Progress indicator
+- Edit not working with no-JS
+- Filter emotying on task deletion with no-JS
