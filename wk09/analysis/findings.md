@@ -70,6 +70,11 @@
 
 **Design implication**: Both HTMX and no-JS need better visibility of confirmation in tasks, better highlighting that actions were completed e.g. add, delete and filter .
 
+**WCAG**: 1.4.1 Use of Colour, 4.1.3 Status Messages
+**Impact**: 3/5
+**Inclusion**:2/5
+**Effort**:3/5
+
 **Severity**: Very High
 
 ---
