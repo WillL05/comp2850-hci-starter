@@ -122,8 +122,8 @@
 
 Based on frequency + severity:
 
-1. **High**: No confirmation message in no-JS path (affects 2/2 no-JS participants, low confidence)
-2. **Medium**: Cancel button ambiguous (3/5 confused, but completed anyway)
+1. **High**: Make confirmations of actions clearer (3/4 found it difficult to know whether task added)
+2. **Medium**: add pop-up status message to enable users to see task confirmation no matter their position on page 
 3. **Low**: Edit button focus order (minor hesitation, all succeeded)
 
 # Redesign Priorities — Week 10 Lab 2
@@ -135,20 +135,20 @@ Based on frequency + severity:
 **Fix**: give text a background of sufficient contrast 
 **Effort**: 1 hour
 
-## Priority 2: Distinguishable colours between buttons (MUST FIX)
+## Priority 2: Distinguishable colours for what is selected
 **Issue**: P1 and P4 found it difficult to see what was selected e.g. button or field, especially prevalent on keyboard only 
 **Evidence**: quotes
-**WCAG**: 1.4.1 Use of Colour
+**WCAG**: 1.4.1 Use of Colour, 2.4.7 Focus Indicators
 **Fix**: Give hover and select a colour of greater contrast
 **Effort**: 1 hour
 
 
 ## Priority 3: Add status message for adding,filtering and deleting tasks, should show at top of page (SHOULD FIX)
-**Issue**: P1,P2 and P4 were unsure whether actions had completed, a pop-up message would further improve clarity and draw their attention to the action working properly 
+**Issue**: P1 and P2 had some trouble with quickly identifying the delete and edit buttons, leading to accidentally clicking one or the other
 **Evidence**: quotes
-**WCAG**: 2.4.6 Headings and Labels (AA)
-**Fix**: add pop-up status/announcement message on action
-**Effort**: 1-2 hours
+**WCAG**: 1.4.1 Use of Colour, 3.2.4 Consistent Identification
+**Fix**: Add greater contrast between edit and delete buttons on tasks 
+**Effort**: 1 hour
 
 ## Deferred (Post-Assessment or Semester 2)
 - Edit not working with no-JS
