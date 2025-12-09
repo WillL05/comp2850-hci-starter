@@ -34,7 +34,7 @@ Notes: None
 ## Pilot 1
 Date: 2025-12-09
 Participant code: P1
-Session ID: P1_6rv7
+Session ID: P1_3cb4
 Variant: no-mouse,no-js (HTMX, mouse, JS-on)
 Consent: Verbal consent given at 14:10
 Notes: None
@@ -44,5 +44,5 @@ Date: 2025-12-09
 Participant code: P2
 Session ID: P2_c20L
 Variant: no-mouse,no-js (HTMX, no-mouse, JS-on)
-Consent: Verbal consent given at 14:10
+Consent: Verbal consent given at 14:4
 Notes: None

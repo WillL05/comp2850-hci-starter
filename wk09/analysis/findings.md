@@ -105,7 +105,7 @@
 **Design implication**: Keep current keyboard implementation, but change selected colour, making it more visible
 
 **WCAG**: 2.1.1 Keyboard
-**Impact**: 2/5
+**Impact**: 3/5
 **Inclusion**:5/5
 **Effort**:2/5
 
