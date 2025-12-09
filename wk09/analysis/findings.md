@@ -88,6 +88,11 @@
 
 **Design implication**: Button colours for hover and select should be clearer with distinct colours
 
+**WCAG**: 1.4.1 Use of Colour, 3.2.4 Consistent Identification
+**Impact**: 2/5
+**Inclusion**:3/5
+**Effort**:3/5
+
 **Severity**: Very high
 
 ---
@@ -98,6 +103,11 @@
 - P4 (keyboard-only): "was a little hard to see what was selected"
 
 **Design implication**: Keep current keyboard implementation, but change selected colour, making it more visible
+
+**WCAG**: 2.1.1 Keyboard
+**Impact**: 2/5
+**Inclusion**:5/5
+**Effort**:2/5
 
 **Severity**: High
 
@@ -112,24 +122,13 @@
 
 **Design implication**: no-JS users could not use the edit button and were unable to make changes to their tasks
 
+**WCAG**: N/A
+**Impact**: 4/5
+**Inclusion**:3/5
+**Effort**:4/5
+
 **Severity**: high
 
----
-## Accessibility Observations
-
-### Keyboard Navigation
-- ✅ All features reachable
-- ⚠️ Highlight of selected section could be clearer and more visible, currently difficult to see 
-
----
-
-## Prioritised Issues
-
-Based on frequency + severity:
-
-1. **High**: Make confirmations of actions clearer (3/4 found it difficult to know whether task added)
-2. **Medium**: add pop-up status message to enable users to see task confirmation no matter their position on page 
-3. **Low**: Edit button focus order (minor hesitation, all succeeded)
 
 # Redesign Priorities — Week 10 Lab 2
 
@@ -148,7 +147,7 @@ Based on frequency + severity:
 **Effort**: 1 hour
 
 
-## Priority 3: Add status message for adding,filtering and deleting tasks, should show at top of page (SHOULD FIX)
+## Priority 3: Users struggled to distinguish between different buttons and their function (SHOULD FIX)
 **Issue**: P1 and P2 had some trouble with quickly identifying the delete and edit buttons, leading to accidentally clicking one or the other
 **Evidence**: quotes
 **WCAG**: 1.4.1 Use of Colour, 3.2.4 Consistent Identification

@@ -41,7 +41,7 @@ Confidence ratings (1–5):
 
 
 
-Session: P2 (sid = P1_7a9f)
+Session: P2 (sid = P2_7a9f)
 Date: 2025-12-01
 Variant: Keyboard, mouse, JS-off
 ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
@@ -51,7 +51,6 @@ ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 |4.9|T2|"worked well but if i tried to enter a new task of just spaces this appeared to work but the task did not show up in the list and this should not be allowed"|
 |43.16|T3|FAILED - page reloaded everytime edit button pressed "didn't work"|
 |22.89|T4|"page reloded everytime delete button was pressed and the filter emptied every time and I addidentaly tried to enter empty filter field"|
-
 
 ts_iso,session_id,request_id,task_code,step,outcome,ms,http_status,js_mode
 2025-12-01T15:36:21.764190215Z,P2_7a9f,r_60882a9d,T0_list,success,,46,200,off
